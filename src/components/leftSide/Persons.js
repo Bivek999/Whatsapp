@@ -6,7 +6,7 @@ import store from "../../Store/ContextData";
 
 const Persons = (props) => {
 
-  const { activeUsers,setActiveUser }=useContext(store);
+  const { activeUsers,setActiveUser,givenMessages,setGivenMessages }=useContext(store);
 
   function chatBox(id){
     console.log(id)
@@ -21,7 +21,7 @@ const Persons = (props) => {
 console.log(conversation2);
 // console.log(props.search);
   }, []);  
-  const chat=[...DUMMYDATA];
+  const chat=[...givenMessages];
   const conversation1=chat[0].messages;
   const conversation2=chat[1].messages;
 
@@ -113,10 +113,3 @@ console.log(conversation2);
 };
 
 export default Persons;
-
-
-// filter((curr) =>
-//               curr.name
-//                 .toLowerCase()
-//                 .includes(props.searchInput.trim().toLowerCase())
-//             )
