@@ -4,7 +4,7 @@
     border-radius: 100%;
 }
 .users{
-    background-color: rgb(27, 144, 27);
+    background-color: rgb(62, 215, 62);
     height: 40px;
     width: 80%;
     padding: 10px;
@@ -15,10 +15,33 @@
     align-items: center;
 }
 
+.active-user{
+    background-color: yellow;
+}
+
+.users:hover{
+    cursor: pointer;
+}
+
+
 .display-users{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 20px;
+}
+
+.users .number-of-message{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    background-color: aquamarine;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

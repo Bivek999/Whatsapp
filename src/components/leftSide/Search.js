@@ -14,7 +14,7 @@ const Search = () => {
             <label htmlFor='input'><span><FaSearch className='icon'/></span></label>
             <input type='text' placeholder='SearchBar' value={val} onChange={handleInput} id='input'/>
         </div>
-        <Persons Search={val}/>
+        <Persons search={val}/>
     </>
   )
 }

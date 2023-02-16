@@ -7,7 +7,11 @@
     float: right;
     margin-top: 20px;
     border-radius: 20px;
+    overflow: hidden;
 }
+
+
+
 .chatScreen .phone-icon{
     /* border: 5px solid black;
     border-radius: 100%;     */
