@@ -1,7 +1,7 @@
 .chat-wrapper .active-user {
   align-self: flex-end;
-  height: 30px;
-  width: max-content;
+  /* height: 30px; */
+  max-width: 60%;
   padding: 10px 20px;
   background-color: rgb(109, 255, 109);
   color: black;
@@ -18,8 +18,9 @@
 }
 .chat-wrapper .non-active-user {
   align-self: flex-start;
-  height: 30px;
-  width: max-content;
+  /* height: 30px; */
+  max-width: 60%;
+  flex-wrap: wrap;
   padding: 10px 20px;
   background-color: rgb(43, 110, 43);
   color: black;
@@ -50,7 +51,7 @@
 
 .user-profile .display-message {
   overflow-y: scroll;
-  height: 440px;
+  height: 70vh;
 }
 
 .user-profile .input-message {
@@ -62,7 +63,9 @@
     padding: 0 2rem 0.2rem 2rem;
     border: 1px solid green;
     border-radius: 30px;
-    margin-bottom: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .user-profile .input-message input {
@@ -80,3 +83,8 @@
     width: 30px;
 }
 
+/* .user-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
